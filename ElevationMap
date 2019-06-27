@@ -1,5 +1,9 @@
+// SRTM Elevation Data
+
 var dataset = ee.Image('USGS/SRTMGL1_003');
 var elevation = dataset.select('elevation');
+
+// Visualization
 var elevationVis = {
   min: -7000.0,
   max: 3000.0,
